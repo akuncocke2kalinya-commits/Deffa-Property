@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deffa Satria – Solusi Mudah Cari Rumah Idaman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .toska-primary { background-color: #0d9488; } 
+        .toska-text { color: #0d9488; }
+        .hero-bg {
+            background: linear-gradient(rgba(13, 148, 136, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000');
+            background-size: cover; background-position: center;
+        }
+        .wa-float {
+            position: fixed; bottom: 25px; right: 25px; z-index: 1000;
+            background-color: #25d366; color: white;
+            padding: 12px 20px; border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex; align-items: center; gap: 8px;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+        .wa-float:hover { transform: scale(1.1); filter: brightness(1.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="wa-float">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="font-bold text-sm">Konsultasi Gratis</span>
+    </a>
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="toska-primary p-2 rounded-lg text-white">
+                    <i class="fas fa-home-user text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight uppercase">Deffa <span class="toska-text">Satria</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="#" class="hover:toska-text transition text-gray-600">Beranda</a>
+                <a href="#properti" class="hover:toska-text transition text-gray-600">Properti</a>
+                <a href="#tentang" class="hover:toska-text transition text-gray-600">Tentang Kami</a>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="toska-primary text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition hover:opacity-90">Hubungi Agen</a>
+        </div>
+    </nav>
+
+    <header class="hero-bg min-h-[85vh] flex items-center justify-center text-center px-6">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">Cari Rumah Idaman Bersama Deffa Property</h1>
+            <p class="text-emerald-50 mb-10 text-lg md:text-xl font-light">Partner properti terpercaya untuk pilihan rumah, apartemen, dan tanah terbaik di Indonesia.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#properti" class="bg-white text-teal-700 px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-gray-100 transition">Lihat Daftar Properti</a>
+                <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="toska-primary text-white px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest border border-teal-500 hover:brightness-110 transition shadow-lg">Konsultasi Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="properti" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-2">Listing Populer</h2>
+            <div class="h-1 w-20 toska-primary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="Rumah">
+                    <div class="absolute top-4 left-4 toska-primary text-white text-[10px] font-bold px-3 py-1 rounded-full">UNIT TERSEDIA</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Modern Family Residence</h3>
+                    <p class="text-gray-400 text-sm mb-4 flex items-center gap-2"><i class="fas fa-map-marker-alt toska-text"></i> BSD City, Tangerang</p>
+                    <p class="text-2xl font-bold toska-text mb-6">Rp 1.250.000.000</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="block w-full text-center border-2 border-teal-600 text-teal-600 py-2 rounded-xl font-bold text-xs uppercase hover:bg-teal-600 hover:text-white transition">Tanya Detail Unit</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="Apartemen">
+                    <div class="absolute top-4 left-4 toska-primary text-white text-[10px] font-bold px-3 py-1 rounded-full">APARTEMEN</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Sky High Apartment</h3>
+                    <p class="text-gray-400 text-sm mb-4 flex items-center gap-2"><i class="fas fa-map-marker-alt toska-text"></i> SCBD, Jakarta Pusat</p>
+                    <p class="text-2xl font-bold toska-text mb-6">Rp 950.000.000</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="block w-full text-center border-2 border-teal-600 text-teal-600 py-2 rounded-xl font-bold text-xs uppercase hover:bg-teal-600 hover:text-white transition">Tanya Detail Unit</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500" alt="Tanah">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">KAVLING</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Tanah Strategis</h3>
+                    <p class="text-gray-400 text-sm mb-4 flex items-center gap-2"><i class="fas fa-map-marker-alt toska-text"></i> Cikarang, Bekasi</p>
+                    <p class="text-2xl font-bold toska-text mb-6">Rp 2.100.000.000</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="block w-full text-center border-2 border-teal-600 text-teal-600 py-2 rounded-xl font-bold text-xs uppercase hover:bg-teal-600 hover:text-white transition">Tanya Detail Unit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800" class="rounded-3xl shadow-2xl" alt="Deffa Satria Property">
+            <div>
+                <h4 class="toska-text font-bold uppercase tracking-widest text-sm mb-4">Profil Agen</h4>
+                <h2 class="text-4xl font-bold mb-6">Wujudkan Rumah Impian Bersama Deffa Satria</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Saya percaya bahwa setiap orang berhak memiliki hunian yang nyaman dan aman. Sebagai agen properti terpercaya, saya hadir untuk memberikan solusi hunian terbaik yang disesuaikan dengan kebutuhan dan anggaran Anda.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <i class="fas fa-certificate toska-text mb-2 text-xl"></i>
+                        <p class="font-bold text-sm">Legalitas Aman</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-2xl">
+                        <i class="fas fa-handshake toska-text mb-2 text-xl"></i>
+                        <p class="font-bold text-sm">Proses Cepat</p>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="toska-primary text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:brightness-110">Mulai Konsultasi</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-20 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-slate-800 pb-16">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-6 italic uppercase tracking-tighter">Deffa <span class="toska-text">Satria</span></h3>
+                <p class="text-slate-400 leading-relaxed mb-6 max-w-sm italic">Membantu ribuan keluarga menemukan hunian impian dengan aman, mudah, dan terpercaya.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:toska-primary transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:toska-primary transition"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-teal-500 uppercase tracking-widest text-xs">Menu</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><a href="#" class="hover:text-white transition">Beranda</a></li>
+                    <li><a href="#properti" class="hover:text-white transition">Daftar Properti</a></li>
+                    <li><a href="#tentang" class="hover:text-white transition">Tentang Deffa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-teal-500 uppercase tracking-widest text-xs">Hubungi Sekarang</h4>
+                <p class="text-sm text-slate-400 mb-6">Siap melayani konsultasi properti 24/7 via WhatsApp.</p>
+                <a href="https://api.whatsapp.com/send?phone=6282260783082&text=Hallo%20kak%2C%20saya%20ingin%20berkonsultasi" target="_blank" class="toska-primary text-white px-6 py-3 rounded-lg font-bold text-[10px] uppercase block w-full text-center tracking-widest">Chat Sekarang</a>
+            </div>
+        </div>
+        <div class="container mx-auto pt-8 text-center text-slate-500 text-[10px] tracking-widest uppercase font-bold">
+            &copy; 2026 Deffa Satria Property. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
